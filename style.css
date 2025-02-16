@@ -1,0 +1,171 @@
+ 
+    header {
+        background-color: #0c0d0e;  
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top:0px;
+        margin-right: 0px;
+        margin-left: 0px;
+     }
+        
+    
+        .logo h1 {
+            color: white;
+            font-size: 24px;
+        }
+    
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+    
+        nav ul li {
+            display: inline;
+        }
+    
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 15px;
+            transition: 0.3s;
+        }
+    
+        nav ul li a:hover {
+            background-color: #1b3a5d;
+            border-radius: 5px;
+        }
+        .introduction{
+            display: flex;
+          padding: 40px 20px;
+    grid-template-columns: 1fr 2fr;
+    margin: 0 auto;
+    max-width: 1200px;
+    gap: 100px;
+    align-items: center;
+        }
+           .introduction h1{
+            font-size: 4.4rem;
+            line-height: 100px;
+            margin-bottom: 30px;
+            padding: 10px;
+           }
+        .introduction p{ 
+            font-size: 1.5rem;
+            color: #525252;
+          
+        }
+        @media(width-high:100px){
+            .introduction p{
+                font-size: 3rem;
+            }
+        }
+        @media(max-width:800px){
+            .introduction{
+                grid-template-columns: 1fr 1fr;
+                font-size: 2rem;
+            }
+            
+        }
+        body{
+            font-family: "Fira Sans", arial,sans-serif;
+               background-color: white;
+        }
+        .diamond{
+            width: 250px;
+            height: auto;
+          object-fit: contain;
+            display: inline-block;
+            transform: matrix(0);
+            border: 5px solid #0a0a0a;
+        }
+        .diamond img{
+            width: 100%;
+            display: block;
+            
+            transform: rotate(-45deg);
+        }
+    
+        .Experience{
+            max-width: 1200px;
+            padding: 40px 20px;
+            margin:0 auto;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 100px;
+        }
+    .subtitle{
+        font-size: 8rem;
+        word-break: break-all;
+        text-transform:uppercase ;
+        max-width: 4ch;
+        color: #e0e0e0;
+    }
+    
+    .Experience-text{
+        font-size: 1.5rem;
+        color: #525252;
+        line-height:1.33;
+        max-width: 40ch;
+        margin-bottom: 60px;
+    }
+    .Experience-text strong{
+        color: #141414;
+    }
+    
+    .empresa{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+        gap: 10px 20px;
+        background: #e6e2e2; 
+        margin: 20px;
+        border-radius: 4px;
+        position: relative;
+    
+    }
+    .empresa-ano{
+        position: absolute;
+        top: 20px;
+        left: -100px;
+        color:#525252;
+        font-size: 0.875rem;
+    }
+    .empresa::before{
+        content:"" ;
+        display: block;
+        width: 4px;
+        height: 20px;
+        background: linear-gradient(#b6f829,#b6f829);
+    
+    }
+    
+    .empresa-titulo{
+        font-size:1.126rem ;
+        line-height: 1.1rem;
+        font-weight: bold;
+    }
+    .empresa-texto{
+     font-size: 0.875rem; 
+     line-height: 1.4;
+     color: #525252;  
+    }
+    .empresa-habilidade{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        align-content: start;
+    }
+    .empresa-habilidade li{
+        font-size: 0.875rem;
+        line-height: 1.4;
+        border-radius: 4px;
+        padding:5px 10px ;
+        background: #fff;
+    }
+    ul{
+        list-style: none;
+    }

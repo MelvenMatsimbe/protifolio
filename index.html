@@ -1,0 +1,404 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    
+    <style> 
+    
+    header {
+    background-color: #0c0d0e;  
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:0px;
+    margin-right: 0px;
+    margin-left: 0px;
+ }
+    
+
+    .logo h1 {
+        color: white;
+        font-size: 24px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    nav ul li {
+        display: inline;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 8px 15px;
+        transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+        background-color: #1b3a5d;
+        border-radius: 5px;
+    }
+    .introduction{
+        display: flex;
+      padding: 40px 20px;
+      height: auto;
+grid-template-columns: 1fr 2fr;
+margin: 0 auto;
+max-width: 1200px;
+height: 600px;
+gap: 100px;
+align-items: center;
+
+    }
+       .introduction h1{
+        font-size: 4.4rem;
+        line-height: 100px;
+        margin-bottom: 30px;
+        padding: 10px;
+       }
+    .introduction p{ 
+        font-size: 1.5rem;
+        color: #525252;
+      
+    }
+    @media(width-high:100px){
+        .introduction p{
+            font-size: 3rem;
+        }
+    }
+    @media(max-width:800px){
+        .introduction{
+            grid-template-columns: 1fr 1fr;
+            font-size: 2rem;
+        }
+        
+    }
+    body{
+        font-family: "Fira Sans", arial,sans-serif;
+           background-color: white;
+    }
+    .diamond{
+        width: 250px;
+        height: auto;
+      object-fit: contain;
+        display: inline-block;
+        transform: matrix(0);
+        border: 5px solid #0a0a0a;
+    }
+    .diamond img{
+        width: 100%;
+        display: block;
+        
+        transform: rotate(-45deg);
+    }
+
+    .Experience{
+        max-width: 1200px;
+    
+        padding: 40px 20px;
+        margin:0 auto;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 100px;
+    }
+.subtitle{
+    font-size: 8rem;
+    word-break: break-all;
+    text-transform:uppercase ;
+    max-width: 4ch;
+    color: #0c0b0b;
+}
+
+.Experience-text{
+    font-size: 1.5rem;
+    color: #525252;
+    line-height:1.33;
+    max-width: 40ch;
+    margin-bottom: 60px;
+}
+.Experience-text strong{
+    color: #141414;
+}
+
+.empresa{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    gap: 10px 20px;
+    background: #e6e2e2; 
+    margin: 20px;
+    border-radius: 4px;
+    position: relative;
+
+}
+.empresa-ano{
+    position: absolute;
+    top: 20px;
+    left: -100px;
+    color:#525252;
+    font-size: 0.875rem;
+}
+.empresa::before{
+    content:"" ;
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#b6f829,#b6f829);
+
+}
+
+.empresa-titulo{
+    font-size:1.126rem ;
+    line-height: 1.1rem;
+    font-weight: bold;
+}
+.empresa-texto{
+ font-size: 0.875rem; 
+ line-height: 1.4;
+ color: #525252;  
+}
+.empresa-habilidade{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-content: start;
+}
+.empresa-habilidade li{
+    font-size: 0.875rem;
+    line-height: 1.4;
+    border-radius: 4px;
+    padding:5px 10px ;
+    background: #fff;
+}
+ul{
+    list-style: none;
+}
+.formation-container{
+     max-width: 1200px;
+     height: 800px;
+     padding: 40px 20px;
+     margin: 0 auto;
+     display: grid;
+     grid-template-columns: 1fr 2fr;
+     gap: 100px;
+    }
+    .formation{
+        background: #141414;
+        color:white;
+        ;
+    }
+    .formation.subtitle{
+        color:#0a0a0a;
+    }
+    .formation-text{
+        font-size: 1.5rem;
+    color: #a3a3a3;
+    line-height:1.33;
+    max-width: 40ch;
+    margin-bottom: 60px;
+    }
+    .formation-text strong{
+        color: #fff;
+    }
+    .faculdade-lista{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 60px;
+    }
+
+    .faculdade{
+        flex: 1;
+        background: #000;
+        padding: 20px;
+        border-radius: 4px;
+    }
+    
+    .faculdade-tipo{
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        color: #a3a3a3;
+        margin-bottom: 10px;
+    }
+    </style>
+</head>
+<body >
+    <header>
+        <div class="logo">
+            <h1 style="background-color: #0d0d0e; font-family: Verdana, Geneva, Tahoma, sans-serifsss;"> Melven Portofilio</h1>
+        </div>
+        <nav>
+            <ul>
+                <li> <a href="#experience1">Experience</a></li>
+                <li> <a href="#Formation">Formation</a></li>
+                <li> <a href="/Pratice/index8.html">Conctact</a></li>
+            </ul>
+        </nav>
+</header>
+<br>
+<br>
+<main class="introduction">
+    <img src="/imgs/download4.jpeg" alt="Melven" width="350px" height="450px" style="border-radius: 100%; display: block;" class="diamond">
+
+
+    <div>
+    <h1>Web developer <br> Frontend & Backend <br>UI /UIX </h1>
+<p>Studing in Parul university Limba Vadodara Gujarat 🇮🇳🇲🇿 </p>
+</div>
+
+</main>
+<section class="Experience" id="experience1" aria-label="Experience">
+    <h2 class="subtitle">Experience</h2>
+
+  <div>
+    <p class="Experience-text"> I developed small projects as backend using just <strong>HTML</strong> and <Strong>Css</Strong>. 
+         for Apps as Social media and i have worked in  <strong> UX</strong> and <strong>UI</strong> as project Designer</p>
+        
+
+        <div class="empresa">
+        <span class="empresa-ano">2023</span>
+        <h3 class="empresa-titulo"> Bickcraft</h3>
+        <span class="empresa-titulo"> <strong>Jr Devloper</strong></span>
+   <p class="empresa-texto">on the Bikcat Projhect i worked on the  full HTML and CSS devlopment of some websites</p>
+  <ul class="empresa-habilidade">
+    <li>HTML</li>
+    <li>Css</li>
+    <li>JavaScript</li>
+   <li> Ux Design</li>
+   <li>UI Design</li>
+   </ul> 
+   </div>
+
+  <div class="empresa">
+    <span class="empresa-ano">2027</span>
+    <h3 class="empresa-titulo"> Microsoft</h3>
+    <span class="empresa-titulo">   <strong>system Devloper</strong></span>
+  <p class="empresa-texto">I developed a lot of systems in Microsoft and was a good Experience to me </p>
+  <ul class="empresa-habilidade">
+  <li>Office 2027</li>
+  <li>Vscode</li>
+  <li>THems</li>
+
+</ul> 
+
+</div>
+<div class="empresa">
+    <span class="empresa-ano">2033</span>
+    <h3 class="empresa-titulo"> Apple</h3>
+    <span class="empresa-titulo"> <strong>IOS Devloper</strong></span>
+<p class="empresa-texto"> i developed a lot of programs in Apple using the IOS languange program</p>
+<ul class="empresa-habilidade">
+<li>MAc prime33</li>
+<li>Iphone AI</li>
+<li> Apple-AI</li>
+
+</ul> 
+</div>
+
+<div class="empresa">
+    <span class="empresa-ano">2045</span>
+    <h3 class="empresa-titulo"> Oracle</h3>
+    <span class="empresa-titulo"> <strong>jr Devloper</strong></span>
+<p class="empresa-texto">on the Bikcat Projhect i worked on the  full HTML and CSS devlopment of some websites</p>
+<
+</div>
+
+</div>
+</section>
+
+
+<section class="Formation" id="Formation" aria-label="Formation">
+<div class="Formation-container">
+    <h2 class="subtitle" style="color: #0a0a0a;"> Formation </h2>
+ 
+    <div>
+        <p class="formation-text"> My academic experince was and still being.
+            i finish my primary school in 2017 in <strong>EP do 1º and 2º Nhambiho</strong> in 2020 i finish my secundary schoocl in <strong>ESMS</strong> and in 2023 i finish my High schoocl in <strong>CIECC, atualy im doing my
+                Bachelors in computer scencie and engineering</strong> </p>
+    <ul class="faculdade-lista">
+<li class="faculdade">
+    <span class="faculdade-tipo">Primaria School</span>
+    <h3 class="faculdade-curso">General Subjects</h3>
+    <span class="faculdade-instituicao">EP 1º and 2º Nhambiho</span>
+</li>
+<li class="faculdade">
+    <span class="faculdade-tipo">Secundary school</span>
+    <h3 class="faculdade-curso">Honours  and the best student of the year</h3>
+    <span class="faculdade-instituicao">ESMS</span>
+</li>
+<li class="faculdade">
+    <span class="faculdade-tipo">High School</span>
+    <h3 class="faculdade-curso">scencie-biology with honours</h3>
+    <span class="faculdade-instituicao">CIECC</span>
+</li>
+
+    </ul>
+    <div class="idiomas">
+        <h3>Idiomas</h3>
+        <ul>
+            <li>Português <span>/Nativo</span></li>
+            <li>Ingles <span>/Fluente</span></li>
+        </ul>
+             </div>
+            </div>
+    
+</div>
+</section>
+
+
+ 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
